@@ -1,42 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Ultimate Frisbee - Home</title>
-	<link rel="stylesheet" href="week2/hw1.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Explorer | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<a href="#main-content">Skip to Main Content</a>
+  <a class="skip-link" href="#main-content">Skip to Main Content</a>
 
-	<header>
-		<h1>Ultimate Frisbee</h1>
-		<nav>
-			<a href="index.html" class="active">Home</a>
-			<a href="teams.html">Teams</a>
-			<a href="history.html">History</a>
-			<a href="http://www.usaultimate.org/index.html" target="_blank">USA Ultimate</a>
-		</nav>
-	</header>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Nature Explorer</h1>
+      <p>Discover beautiful places around the world</p>
+    </div>
 
-	<main id="main-content">
-		<aside class="left">
-    		<a href="https://commons.wikimedia.org/wiki/File%3AUltimate_Frisbee%2C_Jul_2009_-_17.jpg">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Ultimate_Frisbee%2C_Jul_2009_-_19.jpg" alt="Creative Common Ultimate Photo" title="By Ed Yourdon [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"/>
-			</a>
-	    	<a href="https://commons.wikimedia.org/wiki/File%3AUltimate_Frisbee_Colorado_Cup_2005.jpg">
-				<img alt="Ultimate Frisbee Colorado Cup 2005" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Ultimate_Frisbee_Colorado_Cup_2005.jpg"/>
-			</a>
-		    <a href="https://www.flickr.com/photos/paradisecoastie/15409853738/" title="Ultimate Frisbee">
-				<img src="https://farm4.staticflickr.com/3948/15409853738_7dbfbfbac7_k.jpg" alt="Ultimate Frisbee">
-			</a>
-	    </aside>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-        <section class="right">
-			<h2>Watch your Head</h2>
-			<p>Ultimate Frisbee is a sport that I never played myself, but its popularity is something hard to ignore in many Midwestern college towns. Students (and people who wish they were still students) spend the few briefs months of good weather, sprinting down fields, hurling frisbees, and yelling "Stack!!".</p>
-			<p>What I find much more entertaining is the large number of people who continue to play when the weather gets windy and the night sky darkens around oh....4:15pm. The sight of frisbees boomeranging in the wind is topped only by the knowledge that even when you can't see them, those same plastic discs of death are probably hurtling through the dark night sky at 8 or 9 o'clock in the evening.</p>
-			<p>Ultimate Frisbee requires a great deal of stamina and dexterity. Not surprisingly, the <abbr title="International Olympic Committee">IOC</abbr> officially recognized Ultimate as a sport in 2015. It can go up against other sports for inclusion in Olympic games.</p>
-        </section>
-    </main>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to Nature Explorer</h2>
+        <p>
+          This small website celebrates natural beauty through free online images.
+          It demonstrates accessible navigation, a skip link, grid, flexbox,
+          hover effects, the box model, and the nth-child selector.
+        </p>
+        <a class="button-link" href="gallery.html">View Gallery</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+          alt="A peaceful mountain lake surrounded by pine trees"
+        />
+      </div>
+    </section>
+
+    <section class="features-grid">
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+          alt="Sunlight passing through a green forest"
+        />
+        <h3>Forests</h3>
+        <p>Explore peaceful forests full of light, shade, and fresh air.</p>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+          alt="Ocean waves coming toward a sandy beach"
+        />
+        <h3>Oceans</h3>
+        <p>Enjoy the relaxing beauty of beaches, tides, and coastal views.</p>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=80"
+          alt="A deer standing in a natural landscape"
+        />
+        <h3>Wildlife</h3>
+        <p>Nature is also home to amazing animals and living ecosystems.</p>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+          alt="Snowy mountain peaks under a bright blue sky"
+        />
+        <h3>Mountains</h3>
+        <p>Mountain scenery brings together adventure, calm, and scale.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Nature Explorer</p>
+  </footer>
 </body>
 </html>
