@@ -3,86 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nature Explorer | Home</title>
+  <title>Interactive Photo Gallery</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to Main Content</a>
+  <main>
+    <h1>Interactive Photo Gallery</h1>
+    <p>Hover over an image to preview it above.</p>
 
-  <header class="site-header">
-    <div class="brand">
-      <h1>Nature Explorer</h1>
-      <p>Discover beautiful places around the world</p>
+    <div id="image" class="preview-box">
+      Hover over an image below to display here.
     </div>
 
-    <nav class="navbar" aria-label="Main navigation">
-      <a href="index.html" class="active">Home</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+    <section class="gallery">
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+        alt="A peaceful mountain lake surrounded by tall trees"
+        onmouseover="upDate(this)"
+        onmouseout="unDo()"
+      />
 
-  <main id="main-content">
-    <section class="hero">
-      <div class="hero-text">
-        <h2>Welcome to Nature Explorer</h2>
-        <p>
-          This small website celebrates natural beauty through free online images.
-          It demonstrates accessible navigation, a skip link, grid, flexbox,
-          hover effects, the box model, and the nth-child selector.
-        </p>
-        <a class="button-link" href="gallery.html">View Gallery</a>
-      </div>
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+        alt="Sunlight shining through a green forest"
+        onmouseover="upDate(this)"
+        onmouseout="unDo()"
+      />
 
-      <div class="hero-image">
-        <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
-          alt="A peaceful mountain lake surrounded by pine trees"
-        />
-      </div>
-    </section>
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+        alt="Ocean waves reaching a sandy beach"
+        onmouseover="upDate(this)"
+        onmouseout="unDo()"
+      />
 
-    <section class="features-grid">
-      <article class="card">
-        <img
-          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
-          alt="Sunlight passing through a green forest"
-        />
-        <h3>Forests</h3>
-        <p>Explore peaceful forests full of light, shade, and fresh air.</p>
-      </article>
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+        alt="Snow-covered mountain peaks under a blue sky"
+        onmouseover="upDate(this)"
+        onmouseout="unDo()"
+      />
 
-      <article class="card">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
-          alt="Ocean waves coming toward a sandy beach"
-        />
-        <h3>Oceans</h3>
-        <p>Enjoy the relaxing beauty of beaches, tides, and coastal views.</p>
-      </article>
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=80"
+        alt="A deer standing in a natural field"
+        onmouseover="upDate(this)"
+        onmouseout="unDo()"
+      />
 
-      <article class="card">
-        <img
-          src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=80"
-          alt="A deer standing in a natural landscape"
-        />
-        <h3>Wildlife</h3>
-        <p>Nature is also home to amazing animals and living ecosystems.</p>
-      </article>
-
-      <article class="card">
-        <img
-          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
-          alt="Snowy mountain peaks under a bright blue sky"
-        />
-        <h3>Mountains</h3>
-        <p>Mountain scenery brings together adventure, calm, and scale.</p>
-      </article>
+      <img
+        class="preview"
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+        alt="A waterfall flowing over dark rocks"
+        onmouseover="upDate(this)"
+        onmouseout="unDo()"
+      />
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Nature Explorer</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
