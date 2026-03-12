@@ -3,66 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Photo Gallery</title>
+  <title>Accessible Interactive Photo Gallery</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <main>
-    <h1>Interactive Photo Gallery</h1>
-    <p>Hover over an image to preview it above.</p>
+<body onload="addTabFocus()">
+  <header>
+    <h1>Accessible Interactive Photo Gallery</h1>
+    <p>Hover over or focus on an image to preview it.</p>
+  </header>
 
-    <div id="image" class="preview-box">
+  <main>
+    <div id="image" class="preview-box" aria-live="polite">
       Hover over an image below to display here.
     </div>
 
     <section class="gallery">
-      <img
-        class="preview"
-        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
-        alt="A peaceful mountain lake surrounded by tall trees"
-        onmouseover="upDate(this)"
-        onmouseout="unDo()"
-      />
+      <figure class="preview-item">
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80"
+          alt="A peaceful mountain lake surrounded by evergreen trees"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <figcaption>Mountain Lake</figcaption>
+      </figure>
 
-      <img
-        class="preview"
-        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
-        alt="Sunlight shining through a green forest"
-        onmouseover="upDate(this)"
-        onmouseout="unDo()"
-      />
+      <figure class="preview-item">
+        <img
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80"
+          alt="Sunlight shining through a dense green forest"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <figcaption>Green Forest</figcaption>
+      </figure>
 
-      <img
-        class="preview"
-        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
-        alt="Ocean waves reaching a sandy beach"
-        onmouseover="upDate(this)"
-        onmouseout="unDo()"
-      />
+      <figure class="preview-item">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+          alt="Blue ocean waves reaching a sandy beach"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <figcaption>Ocean Beach</figcaption>
+      </figure>
 
-      <img
-        class="preview"
-        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
-        alt="Snow-covered mountain peaks under a blue sky"
-        onmouseover="upDate(this)"
-        onmouseout="unDo()"
-      />
+      <figure class="preview-item">
+        <img
+          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80"
+          alt="Snow-covered mountains under a bright blue sky"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <figcaption>Snowy Peaks</figcaption>
+      </figure>
 
-      <img
-        class="preview"
-        src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=80"
-        alt="A deer standing in a natural field"
-        onmouseover="upDate(this)"
-        onmouseout="unDo()"
-      />
+      <figure class="preview-item">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80"
+          alt="A waterfall flowing down dark rocks into a clear pool"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <figcaption>Waterfall</figcaption>
+      </figure>
 
-      <img
-        class="preview"
-        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
-        alt="A waterfall flowing over dark rocks"
-        onmouseover="upDate(this)"
-        onmouseout="unDo()"
-      />
+      <figure class="preview-item">
+        <img
+          src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=80"
+          alt="A deer standing calmly in a grassy natural landscape"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+        <figcaption>Wild Deer</figcaption>
+      </figure>
     </section>
   </main>
 
