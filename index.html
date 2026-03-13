@@ -1,65 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Moments Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <header>
-    <h1 id="top">Colors!</h1>
+    <h1 id="top">Nature Moments Gallery</h1>
   </header>
 
   <main>
-    <h2>Basic Media Queries</h2>
-    <p>In this assignment you will add two media queries to the css file.</p>
-    <ul>
-      <li>The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.</li>
+    <p>
+      This gallery showcases beautiful outdoor scenes from around the world,
+      including mountains, lakes, forests, beaches, waterfalls, and desert
+      landscapes. The goal of this site is to present a clean, responsive, and
+      accessible photo collection that works well across mobile, tablet, and
+      large desktop screens.
+    </p>
 
-      <li>The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.</li>
-    </ul>
-    <p>You will need to make additional changes to ensure that the divs appear next to each other and that the images are contained within the divs.  Some of these properties include display, width and max-height.</p>
+    <p>
+      The layout changes based on screen size and also responds to user
+      preferences such as reduced motion and dark color scheme settings. Each
+      image includes alternative text to support accessibility and help all
+      visitors better understand the content of the gallery.
+    </p>
 
-    <div>
-      <img src="images/Red.jpeg" alt="Red" width="200">
-      <p class = "label">Red</p>
-    </div>
-    <div>
-      <img src="images/Orange.png" alt="Orange" width="200">
-      <p class = "label">Orange</p>
-    </div>
-    <div>
-      <img src="images/Yellow.png" alt="Yellow" width="200">
-      <p class = "label">Yellow</p>
-    </div>
-    <div>
-      <img src="images/Green.png" alt="Green" width="200">
-      <p class = "label">Green</p>
-    </div>
-    <div>
-      <img src="images/Blue.png" alt="Blue" width="200">
-      <p class = "label">Blue</p>
-    </div>
-    <div>
-      <img src="images/Indigo.jpeg" alt="Indigo" width="200">
-      <p class = "label">Indigo</p>
-    </div>
-    <div>
-      <img src="images/Purple.png" alt="Purple" width="200">
-      <p class = "label">Purple</p>
-    </div>
-    <div>
-      <img src="images/Pink.jpeg" alt="Pink" width="200">
-      <p class = "label">Pink</p>
-    </div>
-    <div>
-      <img src="images/White.png" alt="White" width="200">
-      <p class = "label">White</p>
-    </div>
+    <div class="grid">
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+          alt="A calm mountain lake surrounded by evergreen trees"
+        />
+        <figcaption>Mountain Lake</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+          alt="Sunlight shining through a green forest"
+        />
+        <figcaption>Forest Light</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+          alt="Blue ocean waves meeting a sandy beach"
+        />
+        <figcaption>Ocean Shore</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+          alt="Snow-covered mountain peaks under a blue sky"
+        />
+        <figcaption>Snowy Peaks</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+          alt="A waterfall flowing over dark rocks"
+        />
+        <figcaption>Waterfall</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
+          alt="A wide valley with mountains and a river"
+        />
+        <figcaption>Valley View</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80"
+          alt="Golden desert sand dunes under a bright sky"
+        />
+        <figcaption>Desert Dunes</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1200&q=80"
+          alt="A colorful flower field in soft sunlight"
+        />
+        <figcaption>Flower Field</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80"
+          alt="Tall trees covered in mist in a peaceful forest"
+        />
+        <figcaption>Misty Forest</figcaption>
+      </figure>
     </div>
   </main>
 
@@ -67,5 +108,4 @@
     <a href="#top">Jump to the Top</a>
   </footer>
 </body>
-
 </html>
