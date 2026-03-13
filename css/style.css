@@ -1,76 +1,98 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #dedede;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 32px;
-}
-
-h2 {
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-}
-
-p,
-li {
+  color: #111111;
+  padding: 5px;
+  margin: 15px;
   font-size: 25px;
   font-family: Arial, sans-serif;
 }
 
-p {
+h1 {
   text-align: center;
+  font-size: 1.95em;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+figure {
+  margin: 0;
+  padding: 10px;
+  border: 5px solid blue;
+  background-color: #ffffff;
 }
 
 img {
   width: 100%;
+  display: block;
 }
 
-/* Mobile view: one column */
-div {
-  display: block;
-  width: 90%;
-  margin: 10px auto;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 2px solid #000;
-  background-color: #ffffff;
-}
-
-div img {
-  width: 100%;
-  max-height: 100%;
-  display: block;
-  margin: auto;
+figcaption {
+  text-align: center;
+  padding-top: 8px;
+  font-weight: bold;
 }
 
 /* Tablet view */
 @media screen and (min-width: 772px) {
-  div {
-    display: inline-block;
-    width: 45vw;
-    margin: 10px;
-    vertical-align: top;
+  .grid {
+    grid-template-columns: 1fr 1fr;
   }
 
-  div img {
-    max-height: 30vh;
-    object-fit: cover;
+  figure {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .grid figure:last-child {
+    grid-column: 1 / span 2;
   }
 }
 
 /* Large screen view */
-@media screen and (min-width: 998px) {
-  div {
-    width: 30vw;
+@media screen and (min-width: 992px) {
+  .grid figure {
+    border-radius: 0;
+  }
+
+  .grid figure:nth-child(3n) {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Reduced motion */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Dark color scheme */
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #f5f1a9;
+  }
+
+  figure {
+    background-color: #2f2f2f;
+    color: #f5f1a9;
+    border-color: #000000;
+  }
+
+  a {
+    color: #fff3a3;
   }
 }
