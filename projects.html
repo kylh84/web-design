@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Lan Nguyen Portfolio</title>
+    <meta
+      name="description"
+      content="Projects page for a responsive capstone portfolio with filterable work samples and accessible Bootstrap layout."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="site-shell">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
+        <div class="container">
+          <a class="navbar-brand brand-mark" href="index.html">LN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#siteNav"
+            aria-controls="siteNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="siteNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+              <li class="nav-item"><a class="nav-link active" href="projects.html" aria-current="page">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item">
+                <button class="btn theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+                  Theme
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="flex-fill">
+      <section class="page-banner section-space">
+        <div class="container">
+          <p class="eyebrow">Selected work</p>
+          <h1 class="display-title page-title">Projects that combine strategy, interface design, and responsive development.</h1>
+          <p class="lead page-copy">
+            Use the category filters to explore projects by type. The filtering interaction is powered by custom
+            JavaScript and updates an accessible live summary.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-space pt-0">
+        <div class="container">
+          <div class="filter-bar" role="toolbar" aria-label="Project filters">
+            <button class="btn filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="btn filter-button" type="button" data-filter="ui" aria-pressed="false">UI Design</button>
+            <button class="btn filter-button" type="button" data-filter="web" aria-pressed="false">Web Build</button>
+            <button class="btn filter-button" type="button" data-filter="research" aria-pressed="false">Research</button>
+          </div>
+          <p class="filter-status" id="filterStatus" aria-live="polite">Showing all 6 projects.</p>
+
+          <div class="row g-4 mt-1" id="projectGrid">
+            <div class="col-md-6 col-xl-4 project-item" data-category="ui web">
+              <article class="project-card h-100 reveal-on-scroll">
+                <img src="assets/img/project-dashboard.svg" class="img-fluid project-image" alt="Dashboard preview with charts and planning cards">
+                <div class="project-body">
+                  <p class="project-tag">UI Design + Web Build</p>
+                  <h2>Community Dashboard</h2>
+                  <p>A responsive admin interface for volunteers to monitor events, attendance, and outreach tasks.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 project-item" data-category="research">
+              <article class="project-card h-100 reveal-on-scroll">
+                <img src="assets/img/project-research.svg" class="img-fluid project-image" alt="Research board with notes, interview snippets, and charts">
+                <div class="project-body">
+                  <p class="project-tag">Research</p>
+                  <h2>Student Journey Map</h2>
+                  <p>A synthesis project focused on course friction points, motivation, and support opportunities.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 project-item" data-category="web">
+              <article class="project-card h-100 reveal-on-scroll">
+                <img src="assets/img/project-portfolio.svg" class="img-fluid project-image" alt="Portfolio homepage with hero section and cards">
+                <div class="project-body">
+                  <p class="project-tag">Web Build</p>
+                  <h2>Capstone Portfolio</h2>
+                  <p>This project itself demonstrates semantic HTML, Bootstrap components, and custom responsive styling.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 project-item" data-category="ui">
+              <article class="project-card h-100 reveal-on-scroll">
+                <img src="assets/img/project-mobile.svg" class="img-fluid project-image" alt="Mobile banking interface with cards and action buttons">
+                <div class="project-body">
+                  <p class="project-tag">UI Design</p>
+                  <h2>Mobile Finance Concept</h2>
+                  <p>An interface concept prioritizing glanceable balances, clear actions, and thumb-friendly controls.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 project-item" data-category="web research">
+              <article class="project-card h-100 reveal-on-scroll">
+                <img src="assets/img/project-accessibility.svg" class="img-fluid project-image" alt="Accessibility checklist with contrast and keyboard notes">
+                <div class="project-body">
+                  <p class="project-tag">Web Build + Research</p>
+                  <h2>Accessibility Audit</h2>
+                  <p>A review process that improved focus states, heading order, alt text quality, and color contrast.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 project-item" data-category="ui research">
+              <article class="project-card h-100 reveal-on-scroll">
+                <img src="assets/img/project-brand.svg" class="img-fluid project-image" alt="Brand board with typography samples and earthy color palette">
+                <div class="project-body">
+                  <p class="project-tag">UI Design + Research</p>
+                  <h2>Brand Language Study</h2>
+                  <p>An exploration of visual tone, typography, and color choices for a human-centered portfolio identity.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <p class="mb-0">Ky Le Portfolio Capstone</p>
+        <p class="mb-0">Filter projects by category and review the responsive card layouts across breakpoints.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
