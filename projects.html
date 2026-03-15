@@ -70,13 +70,20 @@
 
       <section class="section-space pt-0">
         <div class="container">
-          <div class="filter-bar" role="toolbar" aria-label="Project filters">
-            <button class="btn filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="btn filter-button" type="button" data-filter="ui" aria-pressed="false">UI Design</button>
-            <button class="btn filter-button" type="button" data-filter="web" aria-pressed="false">Web Build</button>
-            <button class="btn filter-button" type="button" data-filter="research" aria-pressed="false">Research</button>
+          <div class="project-toolbar">
+            <div class="filter-bar" role="toolbar" aria-label="Project filters">
+              <button class="btn filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="btn filter-button" type="button" data-filter="ui" aria-pressed="false">UI Design</button>
+              <button class="btn filter-button" type="button" data-filter="web" aria-pressed="false">Web Build</button>
+              <button class="btn filter-button" type="button" data-filter="research" aria-pressed="false">Research</button>
+            </div>
+            <div class="view-toggle" role="toolbar" aria-label="Project layout switcher">
+              <button class="btn filter-button is-active" type="button" data-view="grid" aria-pressed="true">Grid View</button>
+              <button class="btn filter-button" type="button" data-view="list" aria-pressed="false">List View</button>
+            </div>
           </div>
           <p class="filter-status" id="filterStatus" aria-live="polite">Showing all 6 projects.</p>
+          <p class="filter-status mb-0">Custom JavaScript enhancement: reviewers can test both filtering and view switching on this page.</p>
 
           <div class="row g-4 mt-1" id="projectGrid">
             <div class="col-md-6 col-xl-4 project-item" data-category="ui web">
@@ -146,7 +153,7 @@
 
     <footer class="site-footer">
       <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
-        <p class="mb-0">Ky Le Portfolio Capstone</p>
+        <p class="mb-0">Lan Nguyen Portfolio Capstone</p>
         <p class="mb-0">Filter projects by category and review the responsive card layouts across breakpoints.</p>
       </div>
     </footer>

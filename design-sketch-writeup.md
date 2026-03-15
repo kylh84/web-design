@@ -1,5 +1,7 @@
 # Design Sketch Write-Up
 
-The wireframe image shows three distinct layouts for the same portfolio content: mobile, tablet, and large screen. On mobile, content is stacked vertically to keep reading and navigation simple. On tablet, the layout becomes more balanced with two-column content blocks. On large screens, the hero section expands and supporting cards sit beside one another to create a more editorial presentation.
+This wireframe image shows three low-fidelity sketches for my capstone portfolio: a mobile view, a tablet view, and a large-screen landing page. I kept the sketch black and white so the focus stays on structure, spacing, and content placement rather than color or visual styling.
 
-The main challenge I anticipated was keeping the site visually interesting while still maintaining accessibility and valid semantic markup. To address that, I planned a strong heading structure, simple navigation, enough spacing for touch targets, and a layout system that changes structure instead of only shrinking elements. The final implementation uses Bootstrap for the responsive grid and components, with custom CSS to create a unique style.
+In the mobile view, the layout is stacked into a single column so navigation, hero content, and cards are easy to read and tap. In the tablet view, the content begins to split into two columns so the page can show more information without feeling crowded. In the large-screen landing page, the design becomes more editorial, with hero text on one side and supporting image/stat blocks on the other.
+
+The main goal of these sketches was to show that each view is structurally different, not just a smaller or larger version of the same page. I also planned the layout with accessibility in mind by keeping navigation clear, preserving reading order, and leaving enough space for content sections and touch targets.

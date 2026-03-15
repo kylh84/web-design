@@ -36,8 +36,10 @@
   }
 
   var filterButtons = document.querySelectorAll("[data-filter]");
+  var viewButtons = document.querySelectorAll("[data-view]");
   var projectItems = document.querySelectorAll(".project-item");
   var filterStatus = document.getElementById("filterStatus");
+  var projectGrid = document.getElementById("projectGrid");
 
   if (filterButtons.length && projectItems.length) {
     filterButtons.forEach(function (button) {
@@ -64,6 +66,26 @@
             filter === "all"
               ? "Showing all " + visibleCount + " projects."
               : "Showing " + visibleCount + " " + filter.toUpperCase() + " project" + (visibleCount === 1 ? "." : "s.");
+        }
+      });
+    });
+  }
+
+  if (viewButtons.length && projectGrid) {
+    viewButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var view = button.getAttribute("data-view");
+
+        viewButtons.forEach(function (control) {
+          control.classList.toggle("is-active", control === button);
+          control.setAttribute("aria-pressed", control === button ? "true" : "false");
+        });
+
+        projectGrid.classList.toggle("project-grid-list", view === "list");
+
+        if (filterStatus) {
+          var suffix = view === "list" ? " List view enabled." : " Grid view enabled.";
+          filterStatus.textContent = filterStatus.textContent.replace(/ (Grid|List) view enabled\.$/, "") + suffix;
         }
       });
     });

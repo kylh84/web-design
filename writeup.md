@@ -27,15 +27,15 @@ I used Bootstrap 5 because it provides a strong responsive grid, accessible navi
 ## Four extras
 
 1. Theme toggle with localStorage persistence
-2. JavaScript project filtering with an ARIA live status message
+2. JavaScript project filtering and grid/list layout switching with an ARIA live status message
 3. Client-side form validation with user feedback
-4. Scroll reveal enhancement that disables motion for users who prefer reduced motion
+4. Accessibility-focused enhancements including skip links, visible focus states, reduced-motion support, and a manual carousel
 
 Bonus enhancements:
 
 - Sticky footer layout
 - Bootstrap modal image previews
-- Manual carousel controls
+- Third responsive viewport between mobile and large screen
 
 ## What I would say in the demo video
 

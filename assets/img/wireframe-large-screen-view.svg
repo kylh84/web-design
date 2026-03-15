@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Capstone portfolio large-screen wireframe</title>
+  <desc id="desc">Low-fidelity black and white wireframe showing the larger screen landing page view for the capstone portfolio.</desc>
+  <rect width="1400" height="1000" fill="#ffffff"/>
+
+  <text x="64" y="86" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111111">Capstone Portfolio Wireframe</text>
+  <text x="64" y="128" font-family="Arial, sans-serif" font-size="28" fill="#111111">Larger Screen View</text>
+  <text x="64" y="170" font-family="Arial, sans-serif" font-size="20" fill="#222222">Landing page layout with wider editorial composition and side-by-side content blocks.</text>
+
+  <rect x="84" y="230" width="1230" height="620" rx="26" fill="none" stroke="#111111" stroke-width="6"/>
+
+  <rect x="126" y="276" width="1146" height="48" rx="8" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="670" y="306" font-family="Arial, sans-serif" font-size="18" fill="#111111">Navigation</text>
+
+  <rect x="126" y="362" width="602" height="254" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="366" y="498" font-family="Arial, sans-serif" font-size="22" fill="#111111">Hero Copy and Call To Action</text>
+
+  <rect x="760" y="362" width="230" height="116" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="840" y="428" font-family="Arial, sans-serif" font-size="20" fill="#111111">Image</text>
+
+  <rect x="1024" y="362" width="248" height="116" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="1118" y="428" font-family="Arial, sans-serif" font-size="20" fill="#111111">Stats</text>
+
+  <rect x="760" y="500" width="512" height="116" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="940" y="566" font-family="Arial, sans-serif" font-size="20" fill="#111111">Supporting Content</text>
+
+  <rect x="126" y="652" width="1146" height="146" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="620" y="732" font-family="Arial, sans-serif" font-size="20" fill="#111111">Featured Sections / Footer Area</text>
+
+  <text x="64" y="914" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">Notes</text>
+  <text x="64" y="952" font-family="Arial, sans-serif" font-size="20" fill="#222222">- Layout becomes multi-column when more horizontal space is available.</text>
+  <text x="64" y="986" font-family="Arial, sans-serif" font-size="20" fill="#222222">- Landing page uses separate hero, image, and stats blocks for stronger hierarchy.</text>
+</svg>

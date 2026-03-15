@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Capstone portfolio mobile wireframe</title>
+  <desc id="desc">Low-fidelity black and white wireframe showing the mobile view for the capstone portfolio.</desc>
+  <rect width="900" height="1200" fill="#ffffff"/>
+
+  <text x="64" y="90" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111111">Capstone Portfolio Wireframe</text>
+  <text x="64" y="132" font-family="Arial, sans-serif" font-size="28" fill="#111111">Mobile View</text>
+  <text x="64" y="176" font-family="Arial, sans-serif" font-size="20" fill="#222222">Single-column layout focused on clear reading order and touch-friendly sections.</text>
+
+  <rect x="180" y="230" width="360" height="760" rx="32" fill="none" stroke="#111111" stroke-width="6"/>
+
+  <rect x="214" y="282" width="292" height="44" rx="8" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="340" y="310" font-family="Arial, sans-serif" font-size="18" fill="#111111">Navigation</text>
+
+  <rect x="214" y="360" width="292" height="156" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="326" y="446" font-family="Arial, sans-serif" font-size="20" fill="#111111">Hero Section</text>
+
+  <rect x="214" y="550" width="292" height="122" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="324" y="618" font-family="Arial, sans-serif" font-size="20" fill="#111111">About Card</text>
+
+  <rect x="214" y="706" width="292" height="122" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="316" y="774" font-family="Arial, sans-serif" font-size="20" fill="#111111">Project Card</text>
+
+  <rect x="214" y="862" width="292" height="84" rx="16" fill="none" stroke="#111111" stroke-width="4"/>
+  <text x="338" y="912" font-family="Arial, sans-serif" font-size="20" fill="#111111">Footer</text>
+
+  <text x="64" y="1060" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111111">Notes</text>
+  <text x="64" y="1100" font-family="Arial, sans-serif" font-size="20" fill="#222222">- Content stacks vertically for smaller screens.</text>
+  <text x="64" y="1134" font-family="Arial, sans-serif" font-size="20" fill="#222222">- Navigation, hero, and cards appear in a simple top-to-bottom order.</text>
+  <text x="64" y="1168" font-family="Arial, sans-serif" font-size="20" fill="#222222">- Layout supports easy scrolling and touch interaction.</text>
+</svg>
