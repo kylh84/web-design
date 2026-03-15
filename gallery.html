@@ -68,8 +68,9 @@
         </div>
       </section>
 
-      <section class="section-space pt-0">
+      <section class="section-space pt-0" aria-labelledby="gallery-content-heading">
         <div class="container">
+          <h2 class="visually-hidden" id="gallery-content-heading">Gallery carousel and image preview collection</h2>
           <div class="gallery-note">
             <p class="mb-0">
               Accessibility note: the carousel is manual only and does not auto-advance. Image previews open on demand
@@ -152,7 +153,7 @@
       </div>
     </footer>
 
-    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="galleryModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content gallery-modal">
           <div class="modal-header">
